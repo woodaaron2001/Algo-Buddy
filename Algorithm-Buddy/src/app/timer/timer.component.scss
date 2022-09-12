@@ -1,0 +1,125 @@
+
+*{
+    color:white;
+}
+
+@font-face {
+    font-family: "Orbitron";
+    src: local("Orbitron"), url(C:/Users/redbr/Desktop/Algorithm-Buddy/src/assets/fonts/DS-DIGI.ttf) format("truetype");
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+.stackmat{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    filter: drop-shadow(10px 10px 10px #383A3F);
+    width: 95%; 
+    pointer-events: none;
+
+}
+
+.clock{
+    text-align: center;
+
+    font-size: 200px;
+    margin-top: 10%;
+    margin-bottom: 50px;
+}
+
+.scramble{
+    text-align: center;
+    font-family: Orbitron;
+    font-size: 100px;
+}
+
+p{
+    text-align: center;
+    font-size: 3vw;
+    padding:20px; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 5vw;
+    font-family: "Orbitron";
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
+
+}
+
+.clockAndTextContainer{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    height:80vh;
+    align-items: center;
+}
+
+.infoButton{
+    padding:1vw;
+    font-size: 1.5vw;
+    background-color: #5c6166;
+    border-radius: 10px;
+    width:50%;
+    margin: 20px;
+    margin-bottom: 0px;
+
+}
+
+$color-one: #1F2124;
+$color-two: #383A3F;
+$color-three: #05121b; 
+$color-four: #081b2a;
+
+
+.btn {
+    display: block;
+    background: $color-four;
+    color: white;
+    padding: 15px 20px;
+    margin: 40px 0;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.9);
+    transition: all 200ms ease-in-out;
+    text-decoration: none;
+    font-size: 1.5vw;
+    &:hover {
+      background: $color-three;
+    }
+}
+
+
+@media (max-width: 700px){
+    .btn{
+        font-size: 3vw;
+    }
+}
+

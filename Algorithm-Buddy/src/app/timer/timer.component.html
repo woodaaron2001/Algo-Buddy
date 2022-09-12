@@ -1,0 +1,29 @@
+
+
+
+
+<div class = "clockAndTextContainer">
+    <button class = "btn" (click)="openDialog('1000ms', '1000ms')">Stackmat Explanation</button>
+    <p >{{scramble}} </p>
+
+    <div class = "container">
+        <img src = "/assets/images/stackmat3.png" class = "stackmat"> 
+        <div class = "centered"> {{displayNum}}</div> 
+    </div>
+
+
+    <p *ngIf="stage==0"> Press space/tap to start inspection </p>
+
+    <p *ngIf="stage==1"> Hold space or tap and hold for 2 seconds when inspected </p>
+  
+    <p *ngIf="stage==2"> Release after timer hits 0 </p>
+
+    <p *ngIf="stage==3"> GO! </p>
+
+    <p *ngIf="stage==4"> Time: {{finalTime}} <br><br><br>  Press space/tap to get new scramble </p>
+
+    <p *ngIf="stage==7"> Inspection time exceeded! <br><br><br> Press space/tap to retry </p>
+    <p *ngIf="stage==8"> You must hold space/tap for 2 seconds before starting <br><br><br> Press space/tap to get new scramble </p>
+    <p *ngIf="stage==9"> Inspection time exceeded! <br><br><br>  Press space/tap to get new scramble </p>
+</div>
+

@@ -1,0 +1,72 @@
+<h1 mat-dialog-title>Algorithms and cubing</h1>
+<mat-dialog-content class="mat-typography">
+  <p>Note this site is designed for people with knowledge of speedcubing however if you are new and need some information about solving: </p>
+  <h2>First how do we solve a rubiks cube? </h2>
+  <p> First we need to know what the most popular method of solving a cube is: CFOP! <br> <br>
+    CFOP breaks solving the cube into layers rather than solving each face. It has 4 seperate stages:
+  </p>
+  <div style = "display: flex; width: 100%;">
+     <div style = "display: flex; flex-direction: column; align-items: center;">
+        <h3> cross </h3>
+        <img src = "/assets/images/beginners.png" style = "width: 50px">
+     </div>
+     <div style = "display: flex; flex-direction: column; align-items: center;">
+        <h3> F2L </h3>
+        <img src = "/assets/images/f2l_cat.png" style = "width: 50px">
+     </div>
+     <div style = "display: flex; flex-direction: column; align-items: center;">
+        <h3> OLL </h3>
+        <img src = "/assets/images/test.png" style = "width: 50px">
+     </div>
+     <div style = "display: flex; flex-direction: column; align-items: center;">
+        <h3> PLL </h3>
+        <img src = "/assets/images/PLL.png" style = "width: 50px">
+     </div>
+  </div>
+<br>
+  <h2>The cross</h2>
+  <p> The cross is the first step which requires creating a cross
+     where each edge of the cross aligns with the colour on the adjacent center.
+     This however can be done intuitvely so is not included in the list of algorithms</p>
+<br>
+  <h2>F2L: First 2 Layers</h2>
+  <p>The second step is F2L here we begin to match corner-edge pairs and insert them into the slots between the cross to build up the first 2 layers</p>
+  <img src = "/assets/images/f2l_2.png" style = "width: 100px;">
+  <p>This can be done intuitvely however fast solvers use sequences of moves called algorithms to spot a case and instantly solve it by memorization</p>
+  <br>
+  <h2>"Cases"</h2>
+  <p>A Case can be deemed as a recognizable set of edges and corners which can be solved by some predefined set of moves.
+  </p>
+  <br>
+  <p> As an example the below F2L case can be solved by a sequence of "U' L U L'" </p>
+  <img src = "/assets/images/f2l_cat.png" style = "width: 50px">
+  <br>
+  <br>
+  <h2>Move notation </h2>
+  <p> But what does "U' L' U L" mean?</p>
+  <p> Cubing notation lets a user know how to turn their cube given a string of characters </p>
+  <img src = "/assets/images/notation.png" style="width:300px;">
+  <br>
+  <br>
+  <h2> OLL: Orientation of the last layer </h2>
+  <p> Now that we understand Cases,Notation and F2l (hopefully) We need to solve the final layer </p>
+  <p> We need to do this in 2 steps OLL then PLL.</p>
+  <p> OLL refers to orienting the top face so that all colours on the top face are the same</p>
+  <img src = "/assets/images/test.png" style = "width: 50px">
+  <p> To do this we recognise one of 57 cases like the one above and use move notation to solve it</p>
+  <p> This site provides algorithms and for all cases</p>
+  <br>
+  <h2> PLL: Permuation of the last layer </h2>
+  <p>Finally once the last layer is oriented we now need to permute the last layer so all edges and corners are adjacent to their face colour</p>
+  <img src = "/assets/images/PLL.png">
+  <p> As seen above we have oriented the yellow face but still need to permute the layer</p>
+  <p> Again we follow one of 21 cases which can be found on the site</p>
+
+  <h2> Congrats </h2>
+  <p> You have solved a cube now you just have to practice recognising cases and memorizing algorithms to continue</p>
+  <img src = "/assets/images/solved.png">
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close class = "infoBtn">Close</button>
+</mat-dialog-actions>

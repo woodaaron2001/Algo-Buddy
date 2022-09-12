@@ -1,0 +1,28 @@
+$color-one: #1F2124;
+$color-two: #383A3F;
+$color-three: #05121b; 
+$color-four: #081b2a;
+
+
+.infoBtn {
+    display: block;
+    background: $color-four;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1vw;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.9);
+    transition: all 200ms ease-in-out;
+    text-decoration: none;
+    &:hover {
+      background: $color-three;
+    }
+}
+
+@media (max-width:700px){
+    .infoBtn{
+        font-size: 2.5vw;
+        padding:7px;
+    }
+}

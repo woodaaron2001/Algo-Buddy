@@ -1,0 +1,37 @@
+<div class = "navbar">
+  <div style = "display: flex;">
+    <div class = "centeredColumnFlex">
+      <img src="assets/images/Rubiks_Icon.png" class = "rubiksIcon">
+  </div>
+    
+    <div class = "resizableText">
+        Algorithm Buddy
+    </div>
+  </div>
+  <div style = "display:flex; flex-direction: row;">
+    <div class = "resizableText">
+      <a mat-button routerLink="/" class = "centralLinks">Home</a>
+    </div>
+    <div class = "resizableText">
+      <a mat-button routerLink="/timer" class = "centralLinks">Timer</a>
+    </div>
+    <div class = "resizableText">
+      <a mat-button routerLink="/category" class = "centralLinks">Algorithms</a>
+    </div>
+
+    <button (click)="openDialog('1000ms', '1000ms')" class = "infoBtn">Info</button>
+
+  </div>
+  <div>
+     <a href="https://github.com/woodaaron2001" style = "text-decoration: none;">
+      <div class="btn black circular">
+        <img src ="/assets/images/github.png" class = "githubIcon">
+        My Github
+      </div>
+     </a>
+  </div>
+</div>
+<router-outlet></router-outlet>
+
+
+

@@ -1,0 +1,26 @@
+<h1> {{algo.Name}} </h1>
+<div class = "center">
+    <img src="assets/images/background_icon2.png" alt="Rubiks_Background" class = "backgroundIcon">
+</div>
+
+<div class = "centeredMoves">
+        {{algo.Moves}}
+</div>
+
+<div class = "caseTutorialContainer">
+    <div class = "caseContainer" >
+        <h2> Case</h2>
+        <img [src] = algo.ImageUrl class = "caseImage">
+    </div>
+    <br>
+    <div style ="display: flex; flex-direction: column; width: 30vw; align-items: center;">
+        <div>
+            <h2 style = "margin-bottom: 20px;"> Tutorial</h2> 
+            <div class="video-wrap">
+                <iframe width="100%" height="100%" [src]= "VideoUrl | safe" frameborder="0" allow="accelerometer;" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+

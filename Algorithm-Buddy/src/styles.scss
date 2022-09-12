@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/prebuilt-themes/purple-green.css';
+
+
+@font-face {
+    font-family: "Tiro";
+    src: local("Tiro"), url(C:/Users/redbr/Desktop/Algorithm-Buddy/src/assets/fonts/TiroTelugu-Regular.ttf) format("truetype");
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-family: "Tiro";
+ }
+
+ body{
+
+    background-color:#2E2929 ;
+ }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

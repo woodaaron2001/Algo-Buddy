@@ -1,0 +1,14 @@
+<h1>{{category}}</h1>
+
+<div class = "wrappedCardView">
+    <div *ngFor = "let algo of algoList" class="card">
+
+        <div class="title">{{algo.Name}} </div>
+      
+        <div class="icon">
+          <img src  = {{algo.ImageUrl}} style = "max-width: 180PX;">
+        </div>
+      
+        <a routerLink="/detail/{{algo.Name}}" class="btn">More info</a>
+      </div>
+</div>
