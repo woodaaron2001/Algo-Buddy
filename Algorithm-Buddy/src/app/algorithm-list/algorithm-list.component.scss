@@ -110,6 +110,20 @@ body {
   }
 }
 
+
+.back{
+  position: fixed;
+  bottom: 10px;
+  width: 15vw; cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
 .wrappedCardView{
   display:flex;
   justify-content: center;
@@ -120,5 +134,10 @@ body {
   h1{
     font-size: 3vh;
   }
+
+  .back{
+    width:20vh;
+    margin-left: -15px;
+}
 
 }
